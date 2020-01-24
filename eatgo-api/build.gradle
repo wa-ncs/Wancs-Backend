@@ -5,6 +5,7 @@ plugins {
     id "org.sonarqube" version "2.7"
 }
 
+
 group = 'com.soobinnn.eatgo'
 version = '0.0.2'
 sourceCompatibility = '1.8'
