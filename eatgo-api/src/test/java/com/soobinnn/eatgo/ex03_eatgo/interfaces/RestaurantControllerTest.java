@@ -45,7 +45,6 @@ public class RestaurantControllerTest {
     restaurants.add(new Restaurant(1004L, "Joker House", "Seoul"));
 
     given(restaurantService.getRestaurants()).willReturn(restaurants);
-
     mvc.perform((get("/restaurants")))
         .andExpect(status().isOk())
         .andExpect(content().string(containsString("\"id\":1004")))
