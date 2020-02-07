@@ -1,6 +1,4 @@
 # Wancs-Backend
-Wancs-Backend Project
-프로젝트 인원 : 정진섭, 주홍범
-##방지훈
+프로젝트 인원 : 임수빈, 방지훈, 주홍범
 
 Language : Java 1.8
