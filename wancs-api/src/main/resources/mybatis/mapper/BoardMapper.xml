@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hongbeom.wancs.domain.BoardMapper">
+  <select id="getBoardAll" resultType="Board">
+    SELECT board_no boardNo,
+      title,
+      content,
+      views,
+      use_yn useYn,
+      created_date createdDate,
+      updated_date updatedDate
+    FROM board;
+  </select>
+</mapper>
