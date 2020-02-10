@@ -1,3 +1,4 @@
 rootProject.name = 'Wancs-Backend'
 
 include 'eatgo-api'
+include 'wancs-api'
