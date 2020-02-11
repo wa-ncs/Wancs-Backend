@@ -1,6 +1,7 @@
-package com.jihoon.wancs.Board.interfaces;
+package com.jihoon.wancs.interfaces;
 
-import com.jihoon.wancs.Board.application.BoardService;
+import com.jihoon.wancs.application.BoardService;
+import com.jihoon.wancs.domain.Board;
 import java.util.List;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,7 @@ public class BoardController {
   private BoardService boardService;
 
   @GetMapping("/v1/board")
-  public List<Map<String, Object>> getBoards() {
+  public List<Board> getBoards() {
     return boardService.getList();
   }
 

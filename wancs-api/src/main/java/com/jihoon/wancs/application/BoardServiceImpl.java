@@ -1,8 +1,8 @@
-package com.jihoon.wancs.Board.application;
+package com.jihoon.wancs.application;
 
-import com.jihoon.wancs.Board.domain.BoardRepository;
+import com.jihoon.wancs.domain.Board;
+import com.jihoon.wancs.domain.BoardRepository;
 import java.util.List;
-import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +14,7 @@ public class BoardServiceImpl implements BoardService{
 
 
   @Override
-  public List<Map<String, Object>> getList() {
+  public List<Board> getList() {
     return boardRepository.getList();
   }
 }

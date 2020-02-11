@@ -1,6 +1,6 @@
-package com.jihoon.wancs.Board.domain;
+package com.jihoon.wancs.domain;
 
-import java.sql.Timestamp;
+import java.sql.Date;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -12,17 +12,19 @@ import org.apache.ibatis.type.Alias;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@Alias("Board")
+@Alias("BoardVO")
 public class Board {
 
   private Long boardNo;
   private int views;
-  private Category categoryNo;
-  private User userNo;
+  // private Category categoryNo;
+  private int  categoryNo;
+  private int userNo;
+  // private User userNo;
   private String title;
   private String content;
   private char useYN;
-  private Timestamp createDate;
-  private Timestamp updateDate;
+  private Date createdDate;
+  private Date updatedDate;
 
 }

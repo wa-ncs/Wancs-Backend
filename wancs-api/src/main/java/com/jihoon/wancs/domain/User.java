@@ -1,4 +1,4 @@
-package com.jihoon.wancs.Board.domain;
+package com.jihoon.wancs.domain;
 
 import java.sql.Timestamp;
 import lombok.AllArgsConstructor;

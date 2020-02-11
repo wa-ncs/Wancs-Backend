@@ -1,4 +1,4 @@
-package com.jihoon.wancs.Board.domain;
+package com.jihoon.wancs.domain;
 
 import java.util.List;
 import java.util.Map;
@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 @Mapper
 @Repository
 public interface BoardRepository {
-  List<Map<String, Object>> getList();
+  List<Board> getList();
 
 }

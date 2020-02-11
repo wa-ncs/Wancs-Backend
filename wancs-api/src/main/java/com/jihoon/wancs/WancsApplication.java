@@ -1,4 +1,4 @@
-package com.jihoon.wancs.Board;
+package com.jihoon.wancs;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,8 +1,9 @@
-package com.jihoon.wancs.Board.application;
+package com.jihoon.wancs.application;
 
+import com.jihoon.wancs.domain.Board;
 import java.util.List;
 import java.util.Map;
 
 public interface BoardService {
-  List<Map<String, Object>> getList();
+  List<Board> getList();
 }
