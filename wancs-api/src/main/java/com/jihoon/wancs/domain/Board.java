@@ -12,7 +12,7 @@ import org.apache.ibatis.type.Alias;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@Alias("BoardVO")
+@Alias("Board")
 public class Board {
 
   private Long boardNo;

@@ -4,9 +4,10 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.jihoon.wancs.domain.BoardRepository">
-  <select id="getList" resultType="com.jihoon.wancs.domain.Board">
+  <select id="getList" resultType="Board">
     SELECT *
-    FROM board board JOIN user user
-    on board.user_no = user.user_no;
+    FROM board
+    JOIN user on board.user_no = user.user_no
+    WHERE board.USE_YN = 'y' ;
   </select>
 </mapper>
