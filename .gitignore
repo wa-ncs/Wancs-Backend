@@ -34,3 +34,4 @@ eatgo-api/src/main/resources/application.yml
 wancs-api/src/main/resources/application.yml
 LOG_PATH_IS_UNDEFINED
 LOG_PATH_IS_UNDEFINED~a7dd65ddfcee07fd6b5590f16c05522e519a4d42
+LOG_DIR_IS_UNDEFINED/app_2020-02-12_0.log.gz

@@ -18,9 +18,10 @@ public class BoardController {
 
   @GetMapping
   public List<Board> getBoards(
-      @RequestParam(value="category", required = false, defaultValue = "nonParam") String category
+      @RequestParam(value="categoryNo", required = false, defaultValue = "-1") int categoryNo
   ) {
-    return boardService.getList();
+    Board b = new Board();
+    b.setCategoryNo(categoryNo);
+    return boardService.getList(b);
   }
-
 }

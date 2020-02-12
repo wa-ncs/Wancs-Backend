@@ -4,10 +4,14 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.jihoon.wancs.domain.BoardRepository">
-  <select id="getList" resultType="Board">
+  <select id="getList" resultType="Board" parameterType="Board">
     SELECT *
     FROM board
     JOIN user on board.user_no = user.user_no
-    WHERE board.USE_YN = 'y' ;
+    WHERE board.USE_YN = 'y'
+    <if test="categoryNo != -1">
+       and category_no = #{categoryNo}
+    </if>
+
   </select>
 </mapper>
