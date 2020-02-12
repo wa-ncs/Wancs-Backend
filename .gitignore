@@ -32,3 +32,4 @@ out/
 .vscode/
 eatgo-api/src/main/resources/application.yml
 wancs-api/src/main/resources/application.yml
+LOG_PATH_IS_UNDEFINED
