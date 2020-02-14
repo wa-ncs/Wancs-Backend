@@ -13,15 +13,19 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/v1/board")
 public class BoardController {
 
+  final private BoardService boardService;
+
   @Autowired
-  private BoardService boardService;
+  public BoardController(BoardService boardService){
+    this.boardService = boardService;
+  }
 
   @GetMapping
   public List<Board> getBoards(
       @RequestParam(value="categoryNo", required = false, defaultValue = "-1") int categoryNo
   ) {
-    Board b = new Board();
-    b.setCategoryNo(categoryNo);
-    return boardService.getList(b);
+    Board board = new Board();
+    board.setCategoryNo(categoryNo);
+    return boardService.getList(board);
   }
 }

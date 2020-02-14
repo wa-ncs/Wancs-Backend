@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 @Mapper
 public interface BoardRepository {
-  List<Board> getList(Board b);
+  List<Board> getList(Board board);
 
 }

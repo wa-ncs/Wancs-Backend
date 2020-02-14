@@ -20,7 +20,7 @@ public class Board {
   private Long boardNo;
   private int views;
   // private Category categoryNo;
-  private int  categoryNo;
+  private int categoryNo;
   private int userNo;
   // private User userNo;
   private String title;
